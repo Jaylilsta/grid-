@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+
+    }
+
+
+    .container {
+      background-color: black;
+      width: 675px;
+      height: 720px;
+      display: grid;
+      grid-template-rows: 250px 125px 270px 40px;
+      grid-template-columns: 70px 180px 200px 200px;
+      gap: 9px;
+      padding: 0;
+      margin: 0;
+      border: 20px solid black;
+
+
+    }
+
+    .item:first-child {
+      background-color: red;
+      grid-column: span 2;
+
+    }
+
+    .white1 {
+      background-color: antiquewhite;
+      grid-column: span 2;
+    }
+
+    .white2 {
+      background-color: antiquewhite;
+      grid-column: span 2;
+
+    }
+
+    .white3 {
+      background-color: antiquewhite;
+      grid-column: span 2;
+    }
+
+    .yellow {
+      background-color: yellow;
+      grid-row: span 3;
+
+    }
+
+    .white4 {
+      background-color: antiquewhite;
+      grid-row: span 3;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .white5 {
+      background-color: antiquewhite;
+      grid-row: span 3;
+    }
+
+    .white6 {
+      background-color: antiquewhite;
+      grid-row: span 2;
+    }
+
+
+    @media (max-width: 480px) {
+      container {
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    <div class="item yellow"></div>
+    <div class="item white4"></div>
+    <div class="item blue"></div>
+    <div class="item white5"></div>
+    <div class="item white6"></div>
+
+
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
